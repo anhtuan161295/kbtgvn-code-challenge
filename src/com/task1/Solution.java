@@ -3,6 +3,24 @@ package com.task1;
 // https://leetcode.com/discuss/interview-question/2890437/Minimum-moves-to-build-a-palindrome
 public class Solution {
 
+    public int solutionV2(String S) {
+        int[] freq = new int[26];
+
+        for (char c : S.toCharArray()) {
+            freq[c - 'a']++;
+        }
+
+        int min = 0;
+
+        for (int i = 0; i < 26; i++) {
+            if (freq[i] % 2 != 0){
+                min++;
+            }
+        }
+
+        return min;
+    }
+
     // https://www.techiedelight.com/find-minimum-number-deletions-convert-string-into-palindrome/
     public int solution(String S) {
         int n = S.length();
@@ -37,13 +55,13 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int result = solution.solution("ervervige");
+        int result = solution.solutionV2("ervervige");
         System.out.println(result); // 2
-        result = solution.solution("aaabab");
-        System.out.println(result); // 0
+        int result2 = solution.solutionV2("aaabab");
+        System.out.println(result2); // 0
 
-        result = solution.solution("x");
-        System.out.println(result); // 0
+        int result3 = solution.solutionV2("x");
+        System.out.println(result3); // 0
     }
 
 
