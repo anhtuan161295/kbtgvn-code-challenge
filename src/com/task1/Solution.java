@@ -1,5 +1,6 @@
 package com.task1;
 
+// https://leetcode.com/discuss/interview-question/2890437/Minimum-moves-to-build-a-palindrome
 public class Solution {
 
     // https://www.techiedelight.com/find-minimum-number-deletions-convert-string-into-palindrome/

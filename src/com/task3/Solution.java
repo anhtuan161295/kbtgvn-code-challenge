@@ -3,6 +3,7 @@ package com.task3;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/discuss/interview-question/2890453/Number-of-non-empty-rectangular-areas
 public class Solution {
 
     public int solution(int[][] A) {

@@ -1,5 +1,6 @@
 package com.task2;
 
+// https://leetcode.com/discuss/interview-question/2890446/Prepare-a-notification-message-(cropping-words-with-three-dots)
 public class Solution {
 
     public String solution(String message, int K) {
